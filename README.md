@@ -18,6 +18,6 @@ myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
 myTurtle.setPenColor(0)
 myTurtle.pen(TurtlePenMode.Up)
 myTurtle.say("Hello, World!")
-for (let index = 0; index < 0; index++) {
+for (let index = 0; index < 4; index++) {
 }
 ```
