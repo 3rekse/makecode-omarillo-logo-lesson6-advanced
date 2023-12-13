@@ -3,7 +3,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "Turtle Logo": "github:Mr-Coxall/turtle-logo"
+         "Omarillo Logo": "github:3rekse/omarillo"
     },
     "files": [
         "main.blocks",
