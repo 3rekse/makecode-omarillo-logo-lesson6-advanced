@@ -1,5 +1,5 @@
 {
-    "name": "Turtle Logo - Makecode Arcade",
+    "name": "Omarillo Logo - Makecode Arcade",
     "description": "",
     "dependencies": {
         "device": "*",
@@ -19,5 +19,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }

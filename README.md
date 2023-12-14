@@ -1,9 +1,9 @@
 ### @explicitHints true
 
-# Turtle Logo - Lesson #6 - Advanced
+# Omarillo Logo - Lesson #6 - Advanced
 
-## Turtle Logo - Lesson, with variables and sprites #6 @unplugged
-**Making the Turtle's do Loops.**
+## Omarillo Logo - Lesson, with variables and sprites #6 @unplugged
+**Making the Omarillo's do Loops.**
 
 In this lesson you will learn to use loops, to make your code more efficient.
 ![](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced/raw/main/assets/looping_screenshot.png)
@@ -11,9 +11,9 @@ In this lesson you will learn to use loops, to make your code more efficient.
 ## Step 1
 ** Follow Along**
 
-Once again, all our programs begin with an ⇢``on start``⇠ block. You will begin with 1 variables called myDuck and then you need to assign a **Turtle Object** using the ⇢``set myTurtle to a Turtle Object with sprite □ of kind Player``⇠ block.
+Once again, all our programs begin with an ⇢``on start``⇠ block. You will begin with 1 variables called myDuck and then you need to assign a **Omarillo Object** using the ⇢``set myOmarillo to a Omarillo Object with sprite □ of kind Player``⇠ block.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -38,7 +38,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
 
 You know from previous lessons how to move forwards and then turn.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -56,8 +56,8 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 ```
 
 ## Step 3
@@ -72,7 +72,7 @@ Try out some solutions.
 
 Most likely you can up with something like this.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -90,14 +90,14 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 ```
 
 ## Step 5
@@ -105,8 +105,8 @@ myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
 
 When you look at the previous solution, you will notice that the same 2 block were repeated 4 times. In programming this is **a really bad idea**. Repeating yourself encourages errors in your code and is hard to change things if needed.
 ```blocks
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 ```
 
 ## Step 6
@@ -123,7 +123,7 @@ for (let index = 0; index < 4; index++) {
 
 Notice that there is a space inside the block. You can place other blocks in there. Since it has the number "4", any code blocks inside it will be executed 4 times. You can always change the 4 to whatever number you would like. 
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -150,7 +150,7 @@ for (let index = 0; index < 4; index++) {
 
 So you can now take your 2 blocks that repeated 4 times and place them inside the ⇢``repeat 4 times, do``⇠ block. This produces a much simpler and easier to maintain program. 
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -169,17 +169,17 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
 for (let index = 0; index < 4; index++) {
-    myDuck.moveDirection(TurtleDirection.Forward, 25)
-    myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+    myDuck.moveDirection(OmarilloDirection.Forward, 25)
+    myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 }
 ```
 
 ## Step 9
 ** Follow Along**
 
-You could also lift the pen and move your **Turtle Object** over before starting to draw your square. 
+You could also lift the pen and move your **Omarillo Object** over before starting to draw your square. 
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -197,21 +197,21 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myDuck.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Forward, 50)
-myDuck.pen(TurtlePenMode.Down)
+myDuck.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 50)
+myDuck.pen(OmarilloPenMode.Down)
 for (let index = 0; index < 4; index++) {
-    myDuck.moveDirection(TurtleDirection.Forward, 25)
-    myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+    myDuck.moveDirection(OmarilloDirection.Forward, 25)
+    myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 }
 ```
 
 ## Step 9
 ** Follow Along**
 
-You can also have 2 **Turtle Object** drawing squares. 
+You can also have 2 **Omarillo Object** drawing squares. 
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -229,10 +229,10 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myDuck.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Forward, 50)
-myDuck.pen(TurtlePenMode.Down)
-let myApple = turtle.fromSprite(sprites.create(img`
+myDuck.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 50)
+myDuck.pen(OmarilloPenMode.Down)
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -250,16 +250,16 @@ let myApple = turtle.fromSprite(sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Player))
-myApple.pen(TurtlePenMode.Up)
-myApple.moveDirection(TurtleDirection.Backward, 50)
-myApple.pen(TurtlePenMode.Down)
+myApple.pen(OmarilloPenMode.Up)
+myApple.moveDirection(OmarilloDirection.Backward, 50)
+myApple.pen(OmarilloPenMode.Down)
 for (let index = 0; index < 4; index++) {
-    myDuck.moveDirection(TurtleDirection.Forward, 25)
-    myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+    myDuck.moveDirection(OmarilloDirection.Forward, 25)
+    myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 }
 for (let index = 0; index < 4; index++) {
-    myApple.moveDirection(TurtleDirection.Backward, 25)
-    myApple.turnDirectionByDegrees(TurtleTurnDirection.Left, 90)
+    myApple.moveDirection(OmarilloDirection.Backward, 25)
+    myApple.turnDirectionByDegrees(OmarilloTurnDirection.Left, 90)
 }
 ```
 
@@ -268,7 +268,7 @@ for (let index = 0; index < 4; index++) {
 
 You can use the previous example to draw a circle! If you turn a small amount of degrees many times over, you will eventually end up back where you started. The first 7 blocks just move the **Turtle** to not be in the center of the screen.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -321,7 +321,7 @@ Get 2 **Turtle Objects** each drawing an octagon (a stop sign).
 You have successfully completed your six lesson in Turtle Logo.
 
 ```ghost
-let myTurtle = turtle.fromSprite(sprites.create(img``, SpriteKind.Player))
+let myTurtle = omarillo.fromSprite(sprites.create(img``, SpriteKind.Player))
 myTurtle.moveDirection(TurtleDirection.Forward, 0)
 myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
 myTurtle.setPenColor(0)
