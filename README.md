@@ -266,7 +266,7 @@ for (let index = 0; index < 4; index++) {
 ## Step 10
 ** Try it Out**
 
-You can use the previous example to draw a circle! If you turn a small amount of degrees many times over, you will eventually end up back where you started. The first 7 blocks just move the **Turtle** to not be in the center of the screen.
+You can use the previous example to draw a circle! If you turn a small amount of degrees many times over, you will eventually end up back where you started. The first 7 blocks just move the **Omarillo** to not be in the center of the screen.
 ```blocks
 let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
@@ -286,16 +286,16 @@ let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myDuck.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Backward, 7)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Left, 90)
-myDuck.moveDirection(TurtleDirection.Forward, 40)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myDuck.pen(TurtlePenMode.Down)
+myDuck.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Backward, 7)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Left, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 40)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myDuck.pen(OmarilloPenMode.Down)
 myDuck.setPenColor(8)
 for (let index = 0; index < 120; index++) {
-    myDuck.moveDirection(TurtleDirection.Forward, 2)
-    myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 3)
+    myDuck.moveDirection(OmarilloDirection.Forward, 2)
+    myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 3)
 }
 ```
 
@@ -307,26 +307,26 @@ You can now use loops, to make your code more efficient.
 ## Step 11
 **Your Turn**
 
-Get your **Turtle Object** to draw a red octagon (a stop sign). Remember in a regular octagon there 8 sides and all the angles are 45°.
+Get your **Omarillo Object** to draw a red octagon (a stop sign). Remember in a regular octagon there 8 sides and all the angles are 45°.
 ![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced/raw/main/assets/octagon_screenshot.png)
 
 **BONUS**
 
-Get 2 **Turtle Objects** each drawing an octagon (a stop sign).
+Get 2 **Omarillo Objects** each drawing an octagon (a stop sign).
 ![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced/raw/main/assets/octogon_two_objects.png)
 
 ## Step 12
 **Done**
 
-You have successfully completed your six lesson in Turtle Logo.
+You have successfully completed your six lesson in Omarillo Logo.
 
 ```ghost
-let myTurtle = omarillo.fromSprite(sprites.create(img``, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 0)
-myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myTurtle.setPenColor(0)
-myTurtle.pen(TurtlePenMode.Up)
-myTurtle.say("Hello, World!")
+let myOmarillo = omarillo.fromSprite(sprites.create(img``, SpriteKind.Player))
+myOmarillo.moveDirection(OmarilloDirection.Forward, 0)
+myOmarillo.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myOmarillo.setPenColor(0)
+myOmarillo.pen(OmarilloPenMode.Up)
+myOmarillo.say("Hello, World!")
 for (let index = 0; index < 4; index++) {
 }
 ```
