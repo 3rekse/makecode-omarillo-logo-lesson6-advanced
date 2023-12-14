@@ -340,6 +340,12 @@ Get 2 **Omarillo Objects** each drawing an octagon (a stop sign).
 
 You have successfully completed your six lesson in Omarillo Logo.
 
+## Step 13
+**Done**
+
+Non ti resta che far scrivere "OMAR" da un'Omarillo e "ILLO" dall'altro. 
+
+
 ```ghost
 let myOmarillo = omarillo.fromSprite(sprites.create(img``, SpriteKind.Player))
 myOmarillo.moveDirection(OmarilloDirection.Forward, 0)
