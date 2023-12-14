@@ -335,15 +335,15 @@ Get your **Omarillo Object** to draw a red octagon (a stop sign). Remember in a 
 Get 2 **Omarillo Objects** each drawing an octagon (a stop sign).
 ![octagon](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson6-advanced/raw/main/assets/octogon_two_objects.png)
 
+**Bonus Bis**
+
+Non ti resta che far scrivere "OMAR" da un'Omarillo e "ILLO" dall'altro. 
+
 ## Step 12
 **Done**
 
 You have successfully completed your six lesson in Omarillo Logo.
 
-## Step 13
-**Done**
-
-Non ti resta che far scrivere "OMAR" da un'Omarillo e "ILLO" dall'altro. 
 
 
 ```ghost
