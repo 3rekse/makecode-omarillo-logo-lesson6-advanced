@@ -103,6 +103,7 @@ myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 ## Step 5
 ** Did you know**
 
+Osservando la soluzione precedente, noterai che gli stessi 2 blocchi sono stati ripetuti 4 volte. Nella programmazione questa è **una pessima idea**. Ripetersi incoraggia gli errori nel codice ed è difficile cambiare le cose se necessario.
 When you look at the previous solution, you will notice that the same 2 block were repeated 4 times. In programming this is **a really bad idea**. Repeating yourself encourages errors in your code and is hard to change things if needed.
 ```blocks
 let myDuck = omarillo.fromSprite(sprites.create(img`
@@ -130,6 +131,7 @@ myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 ## Step 6
 ** Did you know**
 
+Quello che facciamo invece è usare un nuovo blocco, il blocco ⇢``repeat 4 times, do``⇠. Si trova nel menu "Loops".
 What we do instead is use a new block, the ⇢``repeat 4 times, do``⇠ block. It is under the "Loops" menu. 
 ```blocks
 for (let index = 0; index < 4; index++) {
